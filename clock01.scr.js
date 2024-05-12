@@ -31,9 +31,9 @@ lv.lv_obj_set_height( ui_Clock01_Seconds, 215);
 lv.lv_arc_set_bg_angles(ui_Clock01_Seconds,0,360);
 lv.lv_arc_set_rotation(ui_Clock01_Seconds,270);
 lv.lv_obj_set_style_arc_width(ui_Clock01_Seconds, 0, lv.LV_PART_MAIN| lv.LV_STATE_DEFAULT);
-lv.lv_obj_set_style_arc_color(ui_Clock01_Seconds, lv.lv_color_hex(0xAFAF00), lv.LV_PART_INDICATOR | lv.LV_STATE_DEFAULT );
+lv.lv_obj_set_style_arc_color(ui_Clock01_Seconds, lv.lv_color_hex(0x5F5F5F), lv.LV_PART_INDICATOR | lv.LV_STATE_DEFAULT );
 lv.lv_obj_set_style_arc_width(ui_Clock01_Seconds, 20, lv.LV_PART_INDICATOR| lv.LV_STATE_DEFAULT);
-lv.lv_obj_set_style_arc_opa(ui_Clock01_Seconds, 128, lv.LV_PART_INDICATOR| lv.LV_STATE_DEFAULT);
+//lv.lv_obj_set_style_arc_opa(ui_Clock01_Seconds, 128, lv.LV_PART_INDICATOR| lv.LV_STATE_DEFAULT);
 lv.lv_obj_set_style_bg_opa(ui_Clock01_Seconds, 0, lv.LV_PART_KNOB| lv.LV_STATE_DEFAULT);
 lv.lv_obj_center(ui_Clock01_Seconds);
 
@@ -45,7 +45,7 @@ lv.lv_obj_set_width( ui_Clock01_Minute, lv.LV_SIZE_CONTENT);  /// 1
 lv.lv_obj_set_height( ui_Clock01_Minute, lv.LV_SIZE_CONTENT);   /// 1
 //lv.lv_obj_set_x( ui_Clock01_Minute, 0 );
 //lv.lv_obj_set_y( ui_Clock01_Minute, 0 );
-lv.lv_obj_set_align( ui_Clock01_Minute, lv.LV_ALIGN_BOTTOM_RIGHT );
+lv.lv_obj_set_align( ui_Clock01_Minute, lv.LV_ALIGN_BOTTOM_MID );
 lv.lv_label_set_text(ui_Clock01_Minute, date.getMinutes().toString().padStart(2,"0"));
 lv.lv_obj_set_style_text_color(ui_Clock01_Minute, lv.lv_color_hex(0x0099D9), lv.LV_PART_MAIN | lv.LV_STATE_DEFAULT );
 lv.lv_obj_set_style_text_opa(ui_Clock01_Minute, 255, lv.LV_PART_MAIN| lv.LV_STATE_DEFAULT);
@@ -56,7 +56,7 @@ lv.lv_obj_set_width( ui_Clock01_Hour, lv.LV_SIZE_CONTENT);  /// 1
 lv.lv_obj_set_height( ui_Clock01_Hour, lv.LV_SIZE_CONTENT);   /// 1
 //lv.lv_obj_set_x( ui_Clock01_Hour, 0 );
 //lv.lv_obj_set_y( ui_Clock01_Hour, 0 );
-lv.lv_obj_set_align( ui_Clock01_Hour, lv.LV_ALIGN_TOP_LEFT );
+lv.lv_obj_set_align( ui_Clock01_Hour, lv.LV_ALIGN_TOP_MID );
 lv.lv_obj_set_style_text_color(ui_Clock01_Hour, lv.lv_color_hex(0x00D999), lv.LV_PART_MAIN | lv.LV_STATE_DEFAULT );
 lv.lv_label_set_text(ui_Clock01_Hour, date.getHours().toString().padStart(2,"0"));
 lv.lv_obj_set_style_text_font(ui_Clock01_Hour, lv.lv_font_BigNumbers(), lv.LV_PART_MAIN| lv.LV_STATE_DEFAULT);
